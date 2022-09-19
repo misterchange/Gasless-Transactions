@@ -1,0 +1,72 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x334Df2DC99FeDB0Fe8d9E6DeFcA6213F59Bb493A",
+    "txHash": "0x7c8f291e8f1a151b746d7487991f6d6f70888821ed2e342d506d751c28189893"
+  },
+  "proxies": [
+    {
+      "address": "0x8eB7b0da8564e87973F1BEe2B96654464a369bBC",
+      "txHash": "0xb15cda6347e221f17d6c8635a973c43b3f3f1156e780bfc0b7e60df2378e98b9",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f": {
+      "address": "0xC9FfBfc5Fa4D3e972524B3B3c67B3258C22dd1E3",
+      "txHash": "0x0fc45ab8d0de979311822c551f2805ba736b541ef4eb60dcdc00b461fcc0b98e",
+      "layout": {
+        "storage": [
+          {
+            "label": "_value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Box",
+            "src": "contracts\\Box.sol:7"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "4237aebd8cf84c1abfb5b8d9d4b86b2230ab97cd0e9c6139bf162c4e503f238c": {
+      "address": "0x760062CB2E50bf775cF83c0685DDf692eefe1a3B",
+      "txHash": "0x05c2d373a81fc06b2eac7d5d0a8aeac2affe820fd596a3014e14cc9a37a29468",
+      "layout": {
+        "storage": [
+          {
+            "label": "_value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Box",
+            "src": "contracts\\Box.sol:7"
+          },
+          {
+            "label": "_trustedForwarder",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_address",
+            "contract": "ERC2771Recipient",
+            "src": "@opengsn\\contracts\\src\\ERC2771Recipient.sol:21"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
